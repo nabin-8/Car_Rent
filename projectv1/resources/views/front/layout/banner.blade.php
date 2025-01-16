@@ -45,8 +45,13 @@
                     </a>
                  </div>
               </div>
+              <style>
+                .banner_section {
+                    background-image: url({{ asset('uploads/banner-bg.png') }});
+                }
+              </style>
               <div class="col-md-6">
-                 <div class="banner_img"><img src="images/banner-img.png"></div>
+                 <div class="banner_img"><img src="{{ asset('uploads/banner-bg.png') }}"></div>
               </div>
            </div>
         </div>

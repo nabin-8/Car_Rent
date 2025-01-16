@@ -1,13 +1,14 @@
 @extends('front.layout.master')
 
 @section('main_content')
+@include('front.layout.banner')
     <!-- about section start -->
     <div class="about_section layout_padding">
         <div class="container">
             <div class="about_section_2">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="image_iman"><img src="images/about-img.png" class="about_img"></div>
+                        <div class="image_iman"><img src="{{ asset('uploads/about-img.png') }}" class="about_img"></div>
                     </div>
                     <div class="col-md-6">
                         <div class="about_taital_box">
@@ -84,7 +85,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="gallery_box">
-                            <div class="gallery_img"><img src="images/img-1.png"></div>
+                            <div class="gallery_img"><img src="{{ asset('uploads/img-1.png') }}"></div>
                             <h3 class="types_text">Toyota car</h3>
                             <p class="looking_text">Start per day $4500</p>
                             <div class="read_bt"><a href="#">Book Now</a></div>
@@ -92,7 +93,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="gallery_box">
-                            <div class="gallery_img"><img src="images/img-2.png"></div>
+                            <div class="gallery_img"><img src="{{ asset('uploads/img-2.png') }}"></div>
                             <h3 class="types_text">Toyota car</h3>
                             <p class="looking_text">Start per day $4500</p>
                             <div class="read_bt"><a href="#">Book Now</a></div>
@@ -100,7 +101,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="gallery_box">
-                            <div class="gallery_img"><img src="images/img-3.png"></div>
+                            <div class="gallery_img"><img src="{{ asset('uploads/img-3.png') }}"></div>
                             <h3 class="types_text">Toyota car</h3>
                             <p class="looking_text">Start per day $4500</p>
                             <div class="read_bt"><a href="#">Book Now</a></div>
@@ -112,7 +113,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="gallery_box">
-                            <div class="gallery_img"><img src="images/img-1.png"></div>
+                            <div class="gallery_img"><img src="{{ asset('uploads/img-1.png') }}"></div>
                             <h3 class="types_text">Toyota car</h3>
                             <p class="looking_text">Start per day $4500</p>
                             <div class="read_bt"><a href="#">Book Now</a></div>
@@ -120,7 +121,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="gallery_box">
-                            <div class="gallery_img"><img src="images/img-2.png"></div>
+                            <div class="gallery_img"><img src="{{ asset('uploads/img-2.png') }}"></div>
                             <h3 class="types_text">Toyota car</h3>
                             <p class="looking_text">Start per day $4500</p>
                             <div class="read_bt"><a href="#">Book Now</a></div>
@@ -128,7 +129,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="gallery_box">
-                            <div class="gallery_img"><img src="images/img-3.png"></div>
+                            <div class="gallery_img"><img src="{{ asset('uploads/img-3.png') }}"></div>
                             <h3 class="types_text">Toyota car</h3>
                             <p class="looking_text">Start per day $4500</p>
                             <div class="read_bt"><a href="#">Book Now</a></div>
@@ -150,17 +151,17 @@
             <div class="choose_section_2">
                 <div class="row">
                     <div class="col-sm-4">
-                        <div class="icon_1"><img src="images/icon-1.png"></div>
+                        <div class="icon_1"><img src="{{ asset('uploads/icon-1.png') }}"></div>
                         <h4 class="safety_text">SAFETY & SECURITY</h4>
                         <p class="ipsum_text">variations of passages of Lorem Ipsum available, but the majority have </p>
                     </div>
                     <div class="col-sm-4">
-                        <div class="icon_1"><img src="images/icon-2.png"></div>
+                        <div class="icon_1"><img src="{{ asset('uploads/icon-2.png') }}"></div>
                         <h4 class="safety_text">Online Booking</h4>
                         <p class="ipsum_text">variations of passages of Lorem Ipsum available, but the majority have </p>
                     </div>
                     <div class="col-sm-4">
-                        <div class="icon_1"><img src="images/icon-3.png"></div>
+                        <div class="icon_1"><img src="{{ asset('uploads/icon-3.png') }}"></div>
                         <h4 class="safety_text">Best Drivers</h4>
                         <p class="ipsum_text">variations of passages of Lorem Ipsum available, but the majority have </p>
                     </div>
@@ -184,21 +185,21 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="client_taital_box">
-                                        <div class="client_img"><img src="images/client-img1.png"></div>
+                                        <div class="client_img"><img src="{{ asset('uploads/client-img1.png') }}"></div>
                                         <h3 class="moark_text">Hannery</h3>
                                         <p class="client_text">It is a long established fact that a reader will be
                                             distracted by the readable content of a page</p>
                                     </div>
-                                    <div class="quick_icon"><img src="images/quick-icon.png"></div>
+                                    <div class="quick_icon"><img src="{{ asset('uploads/quick-icon.png') }}"></div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="client_taital_box">
-                                        <div class="client_img"><img src="images/client-img2.png"></div>
+                                        <div class="client_img"><img src="{{ asset('uploads/client-img2.png') }}"></div>
                                         <h3 class="moark_text">Channery</h3>
                                         <p class="client_text">It is a long established fact that a reader will be
                                             distracted by the readable content of a page</p>
                                     </div>
-                                    <div class="quick_icon"><img src="images/quick-icon.png"></div>
+                                    <div class="quick_icon"><img src="{{ asset('uploads/quick-icon.png') }}"></div>
                                 </div>
                             </div>
                         </div>
@@ -213,21 +214,21 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="client_taital_box">
-                                        <div class="client_img"><img src="images/client-img1.png"></div>
+                                        <div class="client_img"><img src="{{ asset('uploads/client-img1.png') }}"></div>
                                         <h3 class="moark_text">Hannery</h3>
                                         <p class="client_text">It is a long established fact that a reader will be
                                             distracted by the readable content of a page</p>
                                     </div>
-                                    <div class="quick_icon"><img src="images/quick-icon.png"></div>
+                                    <div class="quick_icon"><img src="{{ asset('uploads/quick-icon.png') }}"></div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="client_taital_box">
-                                        <div class="client_img"><img src="images/client-img2.png"></div>
+                                        <div class="client_img"><img src="{{ asset('uploads/client-img2.png') }}"></div>
                                         <h3 class="moark_text">Channery</h3>
                                         <p class="client_text">It is a long established fact that a reader will be
                                             distracted by the readable content of a page</p>
                                     </div>
-                                    <div class="quick_icon"><img src="images/quick-icon.png"></div>
+                                    <div class="quick_icon"><img src="{{ asset('uploads/quick-icon.png') }}"></div>
                                 </div>
                             </div>
                         </div>
@@ -242,21 +243,21 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="client_taital_box">
-                                        <div class="client_img"><img src="images/client-img1.png"></div>
+                                        <div class="client_img"><img src="{{ asset('uploads/client-img1.png') }}"></div>
                                         <h3 class="moark_text">Hannery</h3>
                                         <p class="client_text">It is a long established fact that a reader will be
                                             distracted by the readable content of a page</p>
                                     </div>
-                                    <div class="quick_icon"><img src="images/quick-icon.png"></div>
+                                    <div class="quick_icon"><img src="{{ asset('uploads/quick-icon.png') }}"></div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="client_taital_box">
-                                        <div class="client_img"><img src="images/client-img2.png"></div>
+                                        <div class="client_img"><img src="{{ asset('uploads/client-img2.png') }}"></div>
                                         <h3 class="moark_text">Channery</h3>
                                         <p class="client_text">It is a long established fact that a reader will be
                                             distracted by the readable content of a page</p>
                                     </div>
-                                    <div class="quick_icon"><img src="images/quick-icon.png"></div>
+                                    <div class="quick_icon"><img src="{{ asset('uploads/quick-icon.png') }}"></div>
                                 </div>
                             </div>
                         </div>

@@ -33,29 +33,29 @@
       <div class="header_section">
          <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-               <a class="navbar-brand"href="index.html"><img src="images/logo.png"></a>
+               <a class="navbar-brand"href="index.html"><img src="{{ asset('uploads/logo.png') }}"></a>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
                </button>
                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav ml-auto">
                      <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="{{ route('home') }}">Home</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="{{ route('about') }}">About</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
+                        <a class="nav-link" href="{{ route('services') }}">Services</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">Vehicles</a>
+                        <a class="nav-link" href="{{ route('vehicles') }}">Vehicles</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="client.html">Client</a>
+                        <a class="nav-link" href="{{ route('client') }}">Client</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="{{ route('contact') }}">Contact</a>
                      </li>
                   </ul>
                   <form class="form-inline my-2 my-lg-0">
@@ -75,7 +75,6 @@
          </div>
       </div>
       
-      @include('front.layout.banner')
       @yield('main_content')
       
 
@@ -84,7 +83,7 @@
          <div class="container">
             <div class="row">
                <div class="col-md-12">
-                  <div class="footeer_logo"><img src="images/logo.png"></div>
+                  <div class="footeer_logo"><img src="{{ asset('uploads/logo.png') }}"></div>
                </div>
             </div>
             <div class="footer_section_2">
