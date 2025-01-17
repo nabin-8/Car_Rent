@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.invoice-container {
+    border: 1px solid #d5d5d5;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.invoice-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.invoice-logo img {
+    height: 100px;
+}
+
+.invoice-details {
+    text-align: right;
+}
+
+.invoice-details h4 {
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.invoice-details h5 {
+    font-size: 16px;
+    color: #757575;
+}
+
+.invoice-middle {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.invoice-address {
+    display: flex;
+    justify-content: space-between;
+}
+
+.invoice-address h4 {
+    font-size: 20px;
+}
+
+.invoice-address p {
+    color: #757575;
+    font-size: 16px;
+}
+
+.invoice-item-details {
+    margin-top: 20px;
+}
+
+.invoice-item-header,
+.invoice-item-row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #b9b9b9;
+    padding: 10px 0;
+}
+
+.invoice-item-header .item,
+.invoice-item-row .item {
+    width: 14%;
+    text-align: center;
+}
+
+.invoice-total {
+    margin-top: 40px;
+    text-align: right;
+}
+
+.invoice-total p {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.invoice-total span {
+    width: 70px;
+    display: inline-block;
+}
+
+.package_name_width{
+    width: 200px;
+}
+
+@media (max-width:630px) {
+    .invoice-container {
+        padding: 15px;
+    }
+
+    .invoice-logo img {
+        height: 80px;
+    }
+
+    .invoice-details h4 {
+        font-size: 20px;
+    }
+
+    .invoice-details h5 {
+        font-size: 14px;
+    }
+
+    .invoice-address h4 {
+        font-size: 18px;
+    }
+
+    .invoice-address p {
+        font-size: 14px;
+    }
+
+    .invoice-item-header .item,
+    .invoice-item-row .item {
+        width: 20%;
+    }
+
+    .invoice-total p {
+        font-size: 14px;
+    }
+
+    .invoice-total span {
+        width: 60px;
+    }
+}
+@media (max-width:525px) {
+    .invoice-address{
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+}
+@media (max-width:375px) {
+    .invoice-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media print {
+    @page {
+        margin: 0.5cm;
+    }
+}
