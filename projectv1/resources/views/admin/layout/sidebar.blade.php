@@ -15,6 +15,8 @@
 
             <li class="{{ Request::is('admin/car-category/*') ? 'active' : '' }}"><a class="nav-link"
                 href="{{ route('admin_car_category_index') }}"><i class="fas fa-hiking"></i><span>CarCategory</span></a></li>
+            <li class="{{ Request::is('admin/city/*') ? 'active' : '' }}"><a class="nav-link"
+                href="{{ route('admin_city_index') }}"><i class="fas fa-hiking"></i><span>City</span></a></li>
                 
                 {{-- <li class="{{ Request::is('admin/package/*') ? 'active' : '' }}"><a class="nav-link"
                         href="{{ route('admin_package_index') }}"><i class="fas fa-box-open"></i>Package</a></li>
