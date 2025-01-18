@@ -9,7 +9,7 @@
 
         <ul class="sidebar-menu">
 
-            <li class="{{ Request::is('admin/dashboard') ? 'active' : '' }}"><a class="nav-link"
+            {{-- <li class="{{ Request::is('admin/dashboard') ? 'active' : '' }}"><a class="nav-link"
                     href="{{ route('admin_dashboard') }}"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a>
             </li>
 
@@ -94,7 +94,7 @@
             <li class="{{ Request::is('admin/profile') ? 'active' : '' }}"><a class="nav-link"
                     href="{{ route('admin_profile') }}"><i class="fas fa-user-circle"></i>
                     <span>Profile</span></a></li>
-
+ --}}
             {{-- <li class=""><a class="nav-link" href="invoice.html"><i class="fas fa-angle-right"></i>
                     <span>Invoice</span></a></li> --}}
 

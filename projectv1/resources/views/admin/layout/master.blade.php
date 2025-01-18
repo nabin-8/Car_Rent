@@ -1,13 +1,13 @@
-@php
+{{-- @php
     $setting = App\Models\SiteInfo::where('id', 1)->first();
-@endphp
+@endphp --}}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
 
-    <link rel="icon" type="image/png" href="{{ asset('uploads/'.$setting->favicon)}}">
+    {{-- <link rel="icon" type="image/png" href="{{ asset('uploads/'.$setting->favicon)}}"> --}}
 
     <title>Admin Panel</title>
 

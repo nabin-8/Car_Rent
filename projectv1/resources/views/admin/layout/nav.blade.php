@@ -15,8 +15,8 @@
                 <img alt="image" src="{{ asset('uploads/'.Auth::guard('admin')->user()->photo)}}" class="rounded-circle-custom">
             </a>
             <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="{{ route('admin_profile') }}"><i class="far fa-user"></i> Edit Profile</a></li>
-                <li><a class="dropdown-item" href="{{ route('admin_logout') }}"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                {{-- <li><a class="dropdown-item" href="{{ route('admin_profile') }}"><i class="far fa-user"></i> Edit Profile</a></li> --}}
+                {{-- <li><a class="dropdown-item" href="{{ route('admin_logout') }}"><i class="fas fa-sign-out-alt"></i> Logout</a></li> --}}
             </ul>
         </li>
     </ul>

@@ -19,7 +19,7 @@
                                 <h4>Bookings</h4>
                             </div>
                             <div class="card-body">
-                                {{$total_bookings}}
+                                {{-- {{ $total_bookings }} --}}
                             </div>
                         </div>
                     </div>
@@ -34,7 +34,7 @@
                                 <h4>Destinations</h4>
                             </div>
                             <div class="card-body">
-                                {{ $total_destinations }}
+                                {{-- {{ $total_destinations }} --}}
                             </div>
                         </div>
                     </div>
@@ -49,7 +49,7 @@
                                 <h4>Packages</h4>
                             </div>
                             <div class="card-body">
-                                {{ $total_packages }}
+                                {{-- {{ $total_packages }} --}}
                             </div>
                         </div>
                     </div>
@@ -64,7 +64,7 @@
                                 <h4>sliders</h4>
                             </div>
                             <div class="card-body">
-                                {{ $total_slider }}
+                                {{-- {{ $total_slider }} --}}
                             </div>
                         </div>
                     </div>
@@ -79,7 +79,7 @@
                                 <h4>Testimonials</h4>
                             </div>
                             <div class="card-body">
-                                {{ $total_testimonial }}
+                                {{-- {{ $total_testimonial }} --}}
                             </div>
                         </div>
                     </div>
@@ -94,7 +94,7 @@
                                 <h4>Package Types</h4>
                             </div>
                             <div class="card-body">
-                                {{ $total_package_types }}
+                                {{-- {{ $total_package_types }} --}}
                             </div>
                         </div>
                     </div>
@@ -109,7 +109,7 @@
                                 <h4>Posts</h4>
                             </div>
                             <div class="card-body">
-                                {{ $total_posts }}
+                                {{-- {{ $total_posts }} --}}
                             </div>
                         </div>
                     </div>
@@ -124,7 +124,7 @@
                                 <h4>ChatBot Responses</h4>
                             </div>
                             <div class="card-body">
-                                {{ $total_chat_responses }}
+                                {{-- {{ $total_chat_responses }} --}}
                             </div>
                         </div>
                     </div>
@@ -139,7 +139,7 @@
                                 <h4>FAQs</h4>
                             </div>
                             <div class="card-body">
-                                {{ $total_faqs }}
+                                {{-- {{ $total_faqs }} --}}
                             </div>
                         </div>
                     </div>
@@ -154,7 +154,7 @@
                                 <h4>Blog Categories</h4>
                             </div>
                             <div class="card-body">
-                                {{ $total_blog_categories }}
+                                {{-- {{ $total_blog_categories }} --}}
                             </div>
                         </div>
                     </div>
@@ -169,7 +169,7 @@
                                 <h4>Team Members</h4>
                             </div>
                             <div class="card-body">
-                                {{ $total_team_members }}
+                                {{-- {{ $total_team_members }} --}}
                             </div>
                         </div>
                     </div>
@@ -184,7 +184,7 @@
                                 <h4>Amenity's</h4>
                             </div>
                             <div class="card-body">
-                                {{ $total_amenities }}
+                                {{-- {{ $total_amenities }} --}}
                             </div>
                         </div>
                     </div>
