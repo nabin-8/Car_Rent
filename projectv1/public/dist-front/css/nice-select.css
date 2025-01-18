@@ -175,3 +175,8 @@
 .no-csspointerevents .nice-select.open .list {
   display: block;
 }
+
+.custom-select-scroll .list {
+  max-height: 300px;
+  overflow-y: auto;
+}

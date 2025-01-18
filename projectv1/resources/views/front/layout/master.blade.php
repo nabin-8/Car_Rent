@@ -13,6 +13,8 @@
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
+    <link rel="stylesheet" href="{{ asset('dist/css/iziToast.min.css') }}">
+      <link rel="stylesheet" href="{{ asset('dist-front/css/front-css.css') }}">
       <!-- bootstrap css -->
       <link rel="stylesheet" type="text/css" href="{{ asset('dist-front/css/bootstrap.min.css') }}">
       <!-- style css -->
@@ -29,52 +31,7 @@
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
    </head>
    <body>
-      <!-- header section start -->
-      <div class="header_section">
-         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-               <a class="navbar-brand"href="index.html"><img src="{{ asset('uploads/logo.png') }}"></a>
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
-                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('home') }}">Home</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('about') }}">About</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('services') }}">Services</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('vehicles') }}">Vehicles</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('client') }}">Client</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('contact') }}">Contact</a>
-                     </li>
-                  </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                  </form>
-               </div>
-            </nav>
-         </div>
-      </div>
-      <!-- header section end -->
-      <div class="call_text_main">
-         <div class="container">
-            <div class="call_taital">
-               <div class="call_text"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i><span class="padding_left_15">Location</span></a></div>
-               <div class="call_text"><a href="#"><i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_15">(+71) 8522369417</span></a></div>
-               <div class="call_text"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_15">demo@gmail.com</span></a></div>
-            </div>
-         </div>
-      </div>
-      
+      @include('front.layout.nav')
       @yield('main_content')
       
 
@@ -132,7 +89,7 @@
          <div class="container">
             <div class="row">
                <div class="col-sm-12">
-                  <p class="copyright_text">2023 All Rights Reserved. Design by <a href="https://html.design">Free Html Templates</a></p>
+                  <p class="copyright_text">2025 All Rights Reserved. Design by Hemanta Chand Thakuri</p>
                </div>
             </div>
          </div>

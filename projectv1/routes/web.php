@@ -5,6 +5,8 @@ use App\Http\Controllers\Admin\AdminCarCategoryController;
 use App\Http\Controllers\Admin\AdminCarController;
 use App\Http\Controllers\Admin\AdminCityController;
 use App\Http\Controllers\Admin\AdminDashboardController;
+use App\Http\Controllers\Front\FrontAuthController;
+use App\Http\Controllers\Front\FrontBookingController;
 use App\Http\Controllers\Front\FrontFrontendController;
 use App\Http\Controllers\User\UserController;
 use Illuminate\Support\Facades\Route;
@@ -16,7 +18,18 @@ Route::get('/client', [FrontFrontendController::class, 'client'])->name('client'
 Route::get('/vehicles', [FrontFrontendController::class, 'vehicles'])->name('vehicles');
 Route::get('/services', [FrontFrontendController::class, 'services'])->name('services');
 Route::get('/contact', [FrontFrontendController::class, 'contact'])->name('contact');
+Route::get('/car/{slug}', [FrontFrontendController::class, 'car'])->name('car');
+// Booking
+Route::get('/booking/{slug}', [FrontBookingController::class, 'booking'])->name('booking');
+Route::get('/booking/submit', [FrontBookingController::class, 'booking_submit'])->name('booking.submit');
 
+// Auth get
+Route::get('/login', [FrontAuthController::class, 'login'])->name('login');
+Route::get('/registration', [FrontAuthController::class, 'registration'])->name('registration');
+Route::get('/logout', [FrontAuthController::class, 'logout'])->name('logout');
+// Auth post
+Route::post('/login-submit', [FrontAuthController::class, 'login_submit'])->name('login_submit');
+Route::post('/registration-submit', [FrontAuthController::class, 'registration_submit'])->name('registration_submit');
 
 // User
 Route::middleware('auth')

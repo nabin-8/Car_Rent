@@ -11,58 +11,16 @@
        </div>
        <div class="gallery_section_2">
           <div class="row">
-             <div class="col-md-4">
-                <div class="gallery_box">
-                   <div class="gallery_img"><img src="{{ asset('uploads/img-1.png') }}"></div>
-                   <h3 class="types_text">Toyota car</h3>
-                     <p class="looking_text">Start per day $4500</p>
-                   <div class="read_bt"><a href="#">Book Now</a></div>
-                </div>
-             </div>
-             <div class="col-md-4">
-                <div class="gallery_box">
-                   <div class="gallery_img"><img src="{{ asset('uploads/img-2.png') }}"></div>
-                   <h3 class="types_text">Toyota car</h3>
-                     <p class="looking_text">Start per day $4500</p>
-                   <div class="read_bt"><a href="#">Book Now</a></div>
-                </div>
-             </div>
-             <div class="col-md-4">
-                <div class="gallery_box">
-                   <div class="gallery_img"><img src="{{ asset('uploads/img-3.png') }}"></div>
-                   <h3 class="types_text">Toyota car</h3>
-                     <p class="looking_text">Start per day $4500</p>
-                   <div class="read_bt"><a href="#">Book Now</a></div>
-                </div>
-             </div>
-          </div>
-       </div>
-       <div class="gallery_section_2">
-          <div class="row">
-             <div class="col-md-4">
-                <div class="gallery_box">
-                   <div class="gallery_img"><img src="{{ asset('uploads/img-1.png') }}"></div>
-                   <h3 class="types_text">Toyota car</h3>
-                     <p class="looking_text">Start per day $4500</p>
-                   <div class="read_bt"><a href="#">Book Now</a></div>
-                </div>
-             </div>
-             <div class="col-md-4">
-                <div class="gallery_box">
-                   <div class="gallery_img"><img src="{{ asset('uploads/img-2.png') }}"></div>
-                   <h3 class="types_text">Toyota car</h3>
-                     <p class="looking_text">Start per day $4500</p>
-                   <div class="read_bt"><a href="#">Book Now</a></div>
-                </div>
-             </div>
-             <div class="col-md-4">
-                <div class="gallery_box">
-                   <div class="gallery_img"><img src="{{ asset('uploads/img-3.png') }}"></div>
-                   <h3 class="types_text">Toyota car</h3>
-                     <p class="looking_text">Start per day $4500</p>
-                   <div class="read_bt"><a href="#">Book Now</a></div>
-                </div>
-             </div>
+            @foreach ($cars as $car)
+            <div class="col-md-4">
+               <div class="gallery_box">
+                  <div class="gallery_img"><a href="{{ route('car',$car->slug) }}"><img src="{{ asset('uploads/'.$car->featured_photo) }}"></a></div>
+                  <h3 class="types_text">{{ $car->name }}</h3>
+                    <p class="looking_text">Start per day NRS{{ $car->price_per_day }}</p>
+                  <div class="read_bt"><a href="{{ route('booking',$car->slug) }}">Book Now</a></div>
+               </div>
+            </div>
+            @endforeach
           </div>
        </div>
     </div>

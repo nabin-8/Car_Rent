@@ -1,0 +1,15 @@
+
+.front-btn-auth{
+    background-color: #363636;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    width: 100%;
+    transition-duration: 300ms;
+}
+
+.front-btn-auth:hover{
+    background-color: #0E0C06;
+}

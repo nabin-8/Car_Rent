@@ -68,19 +68,19 @@
                                     <div class="row">
                                         <div class="col-md-4">
                                             <div class="mb-3">
-                                                <label class="form-label">Vehicle Type *</label>
+                                                <label class="form-label">Vehicle Type</label>
                                                 <input type="text" class="form-control" name="vehicle_type" value="{{ old('vehicle_type') }}">
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="mb-3">
-                                                <label class="form-label">Company *</label>
+                                                <label class="form-label">Company</label>
                                                 <input type="text" class="form-control" name="company" value="{{ old('company') }}">
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="mb-3">
-                                                <label class="form-label">Model *</label>
+                                                <label class="form-label">Model</label>
                                                 <input type="text" class="form-control" name="model" value="{{ old('model') }}">
                                             </div>
                                         </div>
@@ -88,13 +88,13 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="mb-3">
-                                                <label class="form-label">Seats *</label>
+                                                <label class="form-label">Seats</label>
                                                 <input type="text" class="form-control" name="seats" value="{{ old('seats') }}">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="mb-3">
-                                                <label class="form-label">Suitcase *</label>
+                                                <label class="form-label">Suitcase</label>
                                                 <input type="text" class="form-control" name="suitcase" value="{{ old('suitcase') }}">
                                             </div>
                                         </div>
@@ -104,7 +104,7 @@
                                         <textarea name="short_description" class="form-control h_100" cols="30" rows="10">{{ old('short_description') }}</textarea>
                                     </div>
                                     <div class="mb-3">
-                                        <label class="form-label">Description *</label>
+                                        <label class="form-label">Description</label>
                                         <textarea name="description" class="form-control editor" cols="30" rows="10">{{ old('description') }}</textarea>
                                     </div>
                                     <div class="mb-3">
