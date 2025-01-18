@@ -16,6 +16,7 @@ return new class extends Migration
             $table->integer('car_category_id');
             $table->string('name')->nullable();
             $table->string('slug')->nullable();
+            $table->string('featured_photo')->nullable();
             $table->string('price_per_day')->nullable();
             $table->string('discounted_price')->nullable();
             $table->string('vehicle_type')->nullable();

@@ -63,7 +63,7 @@ class AdminCarCategoryController extends Controller
     {
         $total = Car::where('car_category_id', $id)->count();
         if ($total > 0) {
-            return redirect()->back()->with('error', 'This category has blogs. So, you can not delete this category!');
+            return redirect()->back()->with('error', 'This category has car. So, you can not delete this category!');
         }
 
         $car_category = CarCategory::where('id', $id)->first();
