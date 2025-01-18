@@ -9,14 +9,14 @@
 
         <ul class="sidebar-menu">
 
-            {{-- <li class="{{ Request::is('admin/dashboard') ? 'active' : '' }}"><a class="nav-link"
+            <li class="{{ Request::is('admin/dashboard') ? 'active' : '' }}"><a class="nav-link"
                     href="{{ route('admin_dashboard') }}"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a>
             </li>
 
-            <li class="{{ Request::is('admin/tour/*') ? 'active' : '' }}"><a class="nav-link"
-                href="{{ route('admin_tour_index') }}"><i class="fas fa-hiking"></i><span>Booking</span></a></li>
+            <li class="{{ Request::is('admin/car-category/*') ? 'active' : '' }}"><a class="nav-link"
+                href="{{ route('admin_car_category_index') }}"><i class="fas fa-hiking"></i><span>CarCategory</span></a></li>
                 
-                <li class="{{ Request::is('admin/package/*') ? 'active' : '' }}"><a class="nav-link"
+                {{-- <li class="{{ Request::is('admin/package/*') ? 'active' : '' }}"><a class="nav-link"
                         href="{{ route('admin_package_index') }}"><i class="fas fa-box-open"></i>Package</a></li>
                 <li class="{{ Request::is('admin/package-type/*') ? 'active' : '' }}"><a class="nav-link"
                                 href="{{ route('admin_package_type_index') }}"><i
@@ -89,12 +89,12 @@
 
             <li class="{{ Request::is('admin/review/*') ? 'active' : '' }}"><a class="nav-link"
                     href="{{ route('admin_review_index') }}"><i class="fas fa-th-list"></i><span>Reviews</span></a>
-            </li>
+            </li> --}}
 
-            <li class="{{ Request::is('admin/profile') ? 'active' : '' }}"><a class="nav-link"
+            {{-- <li class="{{ Request::is('admin/profile') ? 'active' : '' }}"><a class="nav-link"
                     href="{{ route('admin_profile') }}"><i class="fas fa-user-circle"></i>
-                    <span>Profile</span></a></li>
- --}}
+                    <span>Profile</span></a></li> --}}
+
             {{-- <li class=""><a class="nav-link" href="invoice.html"><i class="fas fa-angle-right"></i>
                     <span>Invoice</span></a></li> --}}
 

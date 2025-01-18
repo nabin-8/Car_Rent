@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\AdminAuthController;
+use App\Http\Controllers\Admin\AdminCarCategoryController;
 use App\Http\Controllers\Admin\AdminDashboardController;
 use App\Http\Controllers\Front\FrontFrontendController;
 use App\Http\Controllers\User\UserController;
@@ -27,6 +28,15 @@ Route::middleware('admin')
     ->prefix('admin')
     ->group(function () {
         Route::get('/dashboard', [AdminDashboardController::class, 'dashboard'])->name('admin_dashboard');
+
+        // Car category get section
+        Route::get('/car-category/index', [AdminCarCategoryController::class, 'index'])->name('admin_car_category_index');
+        Route::get('/car-category/create', [AdminCarCategoryController::class, 'create'])->name('admin_car_category_create');
+        Route::get('/car-category/edit/{id}', [AdminCarCategoryController::class, 'edit'])->name('admin_car_category_edit');
+        Route::get('/car-category/delete/{id}', [AdminCarCategoryController::class, 'delete'])->name('admin_car_category_delete');
+        // Car category post section
+        Route::post('/car-category/create', [AdminCarCategoryController::class, 'create_submit'])->name('admin_car_category_create_submit');
+        Route::post('/car-category/edit/{id}', [AdminCarCategoryController::class, 'edit_submit'])->name('admin_car_category_edit_submit');
 });
 
 // Admin Auth
