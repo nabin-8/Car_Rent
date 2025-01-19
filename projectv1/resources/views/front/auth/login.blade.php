@@ -8,7 +8,7 @@
                     @csrf
                     <div class="form-group col-md-12">
                         <label for="inputEmail4">Email</label>
-                        <input name="email" type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        <input value="{{ old('email') }}" name="email" type="email" class="form-control" id="inputEmail4" placeholder="Email">
                     </div>
                     <div class="form-group col-md-12">
                         <label for="inputPassword4">Password</label>

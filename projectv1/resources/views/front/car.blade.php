@@ -45,7 +45,11 @@
                 </table>
             </div>
             <div>
-                <a class="btn btn-primary mb-1" href="{{ route('booking',$car->slug) }}" role="button">Book Now</a>
+                @if(Auth::guard('web')->check())
+                    <a class="btn btn-primary mb-1" href="{{ route('booking',$car->slug) }}" role="button">Book Now</a>
+                @else
+                    <a class="btn btn-primary mb-1" href="{{ route('login') }}" role="button">Login to Book</a>
+                @endif
             </div>
         </div>
         <div class="col-md-3 mt-5">

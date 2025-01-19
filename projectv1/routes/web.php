@@ -36,6 +36,8 @@ Route::middleware('auth')
     ->prefix('user')
     ->group(function () {
         Route::get('/dashboard', [UserController::class, 'dashboard'])->name('user_dashboard');
+        Route::get('/user-edit', [UserController::class, 'user_edit'])->name('user_edit');
+        Route::post('/user-submit', [UserController::class, 'user_edit_submit'])->name('user_edit_submit');
 });
 
 // Admin

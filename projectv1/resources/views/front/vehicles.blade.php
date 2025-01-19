@@ -17,7 +17,13 @@
                   <div class="gallery_img"><a href="{{ route('car',$car->slug) }}"><img src="{{ asset('uploads/'.$car->featured_photo) }}"></a></div>
                   <h3 class="types_text">{{ $car->name }}</h3>
                     <p class="looking_text">Start per day NRS{{ $car->price_per_day }}</p>
-                  <div class="read_bt"><a href="{{ route('booking',$car->slug) }}">Book Now</a></div>
+                  <div class="read_bt">
+                     @if(Auth::guard('web')->check())
+                     <a href="{{ route('booking',$car->slug) }}">Book Now</a>
+                     @else
+                     <a href="{{ route('login') }}">Login to Book</a>
+                     @endif
+                  </div>
                </div>
             </div>
             @endforeach
