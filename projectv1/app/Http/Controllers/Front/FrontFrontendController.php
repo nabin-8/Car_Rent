@@ -11,7 +11,8 @@ class FrontFrontendController extends Controller
 {
     public function home()
     {
-        return view('front.home');
+        $cars = Car::all();
+        return view('front.home', compact('cars'));
     }
 
     public function car($slug)

@@ -79,6 +79,9 @@ Route::middleware('admin')
 
         // Booking
         Route::get('/booking', [AdminDashboardController::class, 'booking'])->name('admin_booking_index');
+        Route::get('/booking-view/{id}', [AdminDashboardController::class, 'booking_view'])->name('admin_booking_view');
+        Route::get('/booking-approve/{id}', [AdminDashboardController::class, 'booking_approve'])->name('admin_booking_approve');
+        Route::get('/booking-delete/{id}', [AdminDashboardController::class, 'booking_delete'])->name('admin_booking_delete');
 });
 
 // Admin Auth

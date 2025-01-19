@@ -26,7 +26,7 @@
                 href="{{ route('admin_user_index') }}"><i class="fa fa-user"></i><span>User</span></a></li>
 
             <li class="{{ Request::is('admin/booking/*') ? 'active' : '' }}"><a class="nav-link"
-                href="{{ route('admin_booking_index') }}"><i class="fas fa-shopping-cart"></i><span>User</span></a></li>
+                href="{{ route('admin_booking_index') }}"><i class="fas fa-shopping-cart"></i><span>Bookings</span></a></li>
 
         </ul>
     </aside>
