@@ -19,9 +19,6 @@ Route::get('/vehicles', [FrontFrontendController::class, 'vehicles'])->name('veh
 Route::get('/services', [FrontFrontendController::class, 'services'])->name('services');
 Route::get('/contact', [FrontFrontendController::class, 'contact'])->name('contact');
 Route::get('/car/{slug}', [FrontFrontendController::class, 'car'])->name('car');
-// Booking
-Route::get('/booking/{slug}', [FrontBookingController::class, 'booking'])->name('booking');
-Route::get('/booking/submit', [FrontBookingController::class, 'booking_submit'])->name('booking.submit');
 
 // Auth get
 Route::get('/login', [FrontAuthController::class, 'login'])->name('login');
@@ -38,6 +35,12 @@ Route::middleware('auth')
         Route::get('/dashboard', [UserController::class, 'dashboard'])->name('user_dashboard');
         Route::get('/user-edit', [UserController::class, 'user_edit'])->name('user_edit');
         Route::post('/user-submit', [UserController::class, 'user_edit_submit'])->name('user_edit_submit');
+
+        // Booking
+        Route::get('/booking/{slug}', [FrontBookingController::class, 'booking'])->name('booking');
+        Route::post('/booking/submit', [FrontBookingController::class, 'booking_submit'])->name('booking.submit');
+        Route::get('/payment-success', [FrontBookingController::class, 'payment_success'])->name('payment.success');
+        Route::get('/payment-failure', [FrontBookingController::class, 'payment_failure'])->name('payment.failure');
 });
 
 // Admin

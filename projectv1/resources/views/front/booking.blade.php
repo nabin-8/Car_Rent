@@ -8,6 +8,7 @@
             <form method="post" action="{{ route('booking.submit') }}" enctype="multipart/form-data">
                 @csrf
                 <input name="car_id" type="hidden" value="{{ $car->id }}">
+                <input name="user_id" type="hidden" value="{{ Auth::guard('web')->user()->id }}">
                 <input name="amount" type="hidden" value="@if($car->discounted_price != ''){{$car->discounted_price}}@else{{$car->price_per_day}}@endif">
                 <div class="mb-3">
                     <label class="form-label">Pickup Date *</label>
@@ -36,7 +37,8 @@
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Total Days *</label>
-                    <input type="text" class="form-control" id="total_days" name="total_days" disabled>
+                    <input value="" type="text" class="form-control" id="total_days_display" disabled>
+                    <input type="hidden" id="total_days" name="total_days">
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Total Amount *</label>
@@ -69,8 +71,8 @@
                 @foreach ($details as $label => $value)
                     @if (!empty($value))
                         <li class="list-group-item"><strong>{{ $label }}:</strong> {{ $value }}</li>
-                        @endif
-                        @endforeach
+                    @endif
+                @endforeach
                 <li class="list-group-item"><strong>Link:</strong> <a style="text-decoration: underline !important;" href="{{ route('car',$car->slug) }}">See More Details</a></li>
             </ul>
         </div>
@@ -90,6 +92,7 @@
 
                 $('#total_days').val(totalDays);
                 $('#amount').val(totalAmount);
+                $('#total_days_display').val(totalDays);
             } else {
                 $('#total_days').val('');
                 $('#amount').val('');

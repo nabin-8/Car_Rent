@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
+use App\Models\Booking;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -11,7 +12,9 @@ class UserController extends Controller
 {
     public function dashboard()
     {
-        return view('user.dashboard');
+        $user = Auth::guard('web')->user();
+        $bookings = Booking::where('user_id', $user->id)->get();
+        return view('user.dashboard', compact('bookings'));
     }
 
     public function user_edit()
