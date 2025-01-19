@@ -45,6 +45,7 @@ Route::middleware('admin')
     ->prefix('admin')
     ->group(function () {
         Route::get('/dashboard', [AdminDashboardController::class, 'dashboard'])->name('admin_dashboard');
+        Route::get('/user', [AdminDashboardController::class, 'user'])->name('admin_user_index');
 
         // Car category get section
         Route::get('/car-category/index', [AdminCarCategoryController::class, 'index'])->name('admin_car_category_index');
@@ -72,6 +73,9 @@ Route::middleware('admin')
         // Car category post section
         Route::post('/car/create', [AdminCarController::class, 'create_submit'])->name('admin_car_create_submit');
         Route::post('/car/edit/{id}', [AdminCarController::class, 'edit_submit'])->name('admin_car_edit_submit');
+
+        // Booking
+        Route::get('/booking', [AdminDashboardController::class, 'booking'])->name('admin_booking_index');
 });
 
 // Admin Auth
